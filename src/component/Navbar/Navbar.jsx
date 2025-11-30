@@ -2,19 +2,27 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div>
-            <div  className="navbar bg-base-100 shadow-sm">
+        <div className='shadow-sm bg-white'>
+            <div  className="navbar border-none   flex justify-between  w-[1400px] mx-auto p-4">
   
-  <div className="">
-    <a className="btn btn-ghost text-xl">CS — Ticket System</a>
+ 
+     <div className="">
+    <a className="font-bold text-2xl">CS — Ticket System</a>
   </div>
-  <div className="flex-none">
-    <button className="btn btn-square btn-ghost">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-5 w-5 stroke-current"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path> </svg>
-    </button>
-  </div>
+  
+    <ul className='flex gap-8 items-center'>
+        <li className='text-[#00000090] '> <a href="">Home</a></li>
+        <li className='text-[#00000090] '> <a href="">FAQ</a></li>
+        <li className='text-[#00000090] '> <a href="">Changelog</a></li>
+        <li className='text-[#00000090] '> <a href="">Blog</a></li>
+        <li className='text-[#00000090] '> <a href="">Download</a></li>
+        <li className='text-[#00000090] '> <a href="">Contact</a></li>
+        <li><button type='button' className='btn bg-linear-to-l from-[#9F62F2] to-[#632EE3] px-4 py-3 rounded-lg font-semibold text-white'>+ New Ticket</button></li>
+    </ul>
+ </div>
+  
 </div>
-        </div>
+        
     );
 };
 
