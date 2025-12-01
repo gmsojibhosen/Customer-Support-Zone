@@ -1,0 +1,110 @@
+[
+  {
+    "id": "#1001",
+    "title": "Login Issues - Can't Access Account",
+    "status": "Open",
+    "description": "Customer is unable to log in to their account despite multiple password reset attempts.",
+    "priority": "HIGH PRIORITY",
+    "customer": "John Smith",
+    "createdAt": "2024-01-15"
+  },
+  {
+    "id": "#1002",
+    "title": "Payment Failed - Card Declined Error",
+    "status": "Open",
+    "description": "User reports that their card is being declined even though it works on other services.",
+    "priority": "HIGH PRIORITY",
+    "customer": "Maria Lopez",
+    "createdAt": "2024-02-01"
+  },
+  {
+    "id": "#1003",
+    "title": "App Crashing on Startup",
+    "status": "In Progress",
+    "description": "Mobile app closes immediately after opening on Android version 13.",
+    "priority": "MEDIUM PRIORITY",
+    "customer": "David Wilson",
+    "createdAt": "2024-02-10"
+  },
+  {
+    "id": "#1004",
+    "title": "Email Notifications Not Sending",
+    "status": "Open",
+    "description": "Customer is not receiving order confirmation or password reset emails.",
+    "priority": "HIGH PRIORITY",
+    "customer": "Emily Carter",
+    "createdAt": "2024-03-05"
+  },
+  {
+    "id": "#1005",
+    "title": "Profile Picture Upload Failing",
+    "status": "Closed",
+    "description": "User attempted to upload multiple images but keeps receiving a file validation error.",
+    "priority": "LOW PRIORITY",
+    "customer": "Michael Brown",
+    "createdAt": "2024-03-18"
+  },
+  {
+    "id": "#1006",
+    "title": "Search Results Not Accurate",
+    "status": "Open",
+    "description": "Search is returning unrelated results instead of the correct items.",
+    "priority": "LOW PRIORITY",
+    "customer": "Sarah Miller",
+    "createdAt": "2024-04-02"
+  },
+  {
+    "id": "#1007",
+    "title": "Two-Factor Authentication Not Working",
+    "status": "Open",
+    "description": "User is not receiving 2FA codes on their phone or email.",
+    "priority": "HIGH PRIORITY",
+    "customer": "Robert Davis",
+    "createdAt": "2024-04-20"
+  },
+  {
+    "id": "#1008",
+    "title": "Slow Dashboard Loading",
+    "status": "In Progress",
+    "description": "Dashboard takes nearly 15 seconds to load for multiple users.",
+    "priority": "MEDIUM PRIORITY",
+    "customer": "Olivia Harris",
+    "createdAt": "2024-05-01"
+  },
+  {
+    "id": "#1009",
+    "title": "Order Not Showing in History",
+    "status": "Open",
+    "description": "Customer placed an order but it does not appear in their history.",
+    "priority": "MEDIUM PRIORITY",
+    "customer": "James Thompson",
+    "createdAt": "2024-05-10"
+  },
+  {
+    "id": "#1010",
+    "title": "Broken Layout on Mobile View",
+    "status": "Resolved",
+    "description": "Navbar overlaps page content on smaller screens.",
+    "priority": "LOW PRIORITY",
+    "customer": "Sophia Walker",
+    "createdAt": "2024-06-01"
+  },
+  {
+    "id": "#1011",
+    "title": "Unable to Change Password",
+    "status": "Open",
+    "description": "Password update form shows 'invalid current password' even when correct.",
+    "priority": "HIGH PRIORITY",
+    "customer": "Henry Adams",
+    "createdAt": "2024-07-11"
+  },
+  {
+    "id": "#1012",
+    "title": "Subscription Not Activating",
+    "status": "Open",
+    "description": "User bought a yearly plan, but their account still shows as free.",
+    "priority": "HIGH PRIORITY",
+    "customer": "Ava Robinson",
+    "createdAt": "2024-07-28"
+  }
+]

@@ -1,5 +1,5 @@
 import React from 'react';
-import bgVictor from '../../../assets/vector1.png';
+import bgVictor from '../../assets/vector1.png';
 
 
 const Counter = () => {
