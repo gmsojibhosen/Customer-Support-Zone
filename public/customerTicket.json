@@ -43,7 +43,6 @@
     "priority": "HIGH PRIORITY",
     "customer": "Emily Carter",
     "createdAt": "2024-03-05"
-
   },
   {
     "id": "#1006",
@@ -81,6 +80,18 @@
     "customer": "James Thompson",
     "createdAt": "2024-05-10"
   },
+
+ 
+  {
+    "id": "#1010",
+    "title": "App Freezing During Checkout",
+    "status": "Open",
+    "description": "Users report the checkout screen becomes unresponsive when applying discount codes.",
+    "priority": "HIGH PRIORITY",
+    "customer": "Liam Anderson",
+    "createdAt": "2024-06-02"
+  },
+
   {
     "id": "#1011",
     "title": "Unable to Change Password",

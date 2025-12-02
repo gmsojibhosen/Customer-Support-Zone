@@ -1,6 +1,7 @@
 import React from 'react';
 import clander from '../../assets/ri_calendar-line.png'
 const Tickets = ({ticket}) => {
+
     // cart btn functionality
 let cartBtnText = {};   
 let cartBtnBgColor = {};
@@ -13,10 +14,18 @@ if(ticket.status === 'Open') {
 else if(ticket.status === 'In Progress') {
     cartBtnText = { color: "#9C7700"};
     cartBtnBgColor = {background: '#F8F3B9'}
-    cartBtnDot = {background: '#FEBB0C'}
-    
+    cartBtnDot = {background: '#FEBB0C'} 
 }
-
+let cartPriorityText = {};
+if(ticket.priority === 'LOW PRIORITY') {
+    cartPriorityText = {color: '#02A53B'} 
+}
+else if(ticket.priority === 'MEDIUM PRIORITY') {
+    cartPriorityText = {color: '#FEBB0C'} 
+}
+else if(ticket.priority === 'HIGH PRIORITY') {
+    cartPriorityText = {color: '#F83044'} 
+}
     return (
        
         
@@ -34,7 +43,7 @@ else if(ticket.status === 'In Progress') {
                 <div className="flex justify-between items-center mt-4">
                     <div className='font-medium text-[14px] flex items-center'>
                     <p className='text-[#627382] mr-4'>{ticket.id}</p>
-                    <p className='text-[#02A53B]'>{ticket.priority}</p>
+                    <p style={cartPriorityText} className='text-[#02A53B]'>{ticket.priority}</p>
                 </div>
                 <div className="flex items-center">
                     <p className='text-[#627382] mr-4'>{ticket.customer}</p>
