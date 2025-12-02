@@ -37,17 +37,18 @@
   },
   {
     "id": "#1005",
-    "title": "Profile Picture Upload Failing",
-    "status": "Closed",
-    "description": "User attempted to upload multiple images but keeps receiving a file validation error.",
-    "priority": "LOW PRIORITY",
-    "customer": "Michael Brown",
-    "createdAt": "2024-03-18"
+    "title": "App Crash on Launch Open",
+    "status": "Open",
+    "description": "Customer reports that the mobile app crashes immediately upon opening on Android 13.",
+    "priority": "HIGH PRIORITY",
+    "customer": "Emily Carter",
+    "createdAt": "2024-03-05"
+
   },
   {
     "id": "#1006",
     "title": "Search Results Not Accurate",
-    "status": "Open",
+    "status": "In Progress",
     "description": "Search is returning unrelated results instead of the correct items.",
     "priority": "LOW PRIORITY",
     "customer": "Sarah Miller",
@@ -65,7 +66,7 @@
   {
     "id": "#1008",
     "title": "Slow Dashboard Loading",
-    "status": "In Progress",
+    "status": "Open",
     "description": "Dashboard takes nearly 15 seconds to load for multiple users.",
     "priority": "MEDIUM PRIORITY",
     "customer": "Olivia Harris",
@@ -74,20 +75,11 @@
   {
     "id": "#1009",
     "title": "Order Not Showing in History",
-    "status": "Open",
+    "status": "In Progress",
     "description": "Customer placed an order but it does not appear in their history.",
     "priority": "MEDIUM PRIORITY",
     "customer": "James Thompson",
     "createdAt": "2024-05-10"
-  },
-  {
-    "id": "#1010",
-    "title": "Broken Layout on Mobile View",
-    "status": "Resolved",
-    "description": "Navbar overlaps page content on smaller screens.",
-    "priority": "LOW PRIORITY",
-    "customer": "Sophia Walker",
-    "createdAt": "2024-06-01"
   },
   {
     "id": "#1011",
