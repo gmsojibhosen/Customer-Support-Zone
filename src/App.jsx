@@ -20,10 +20,15 @@ const [count,setCount] = useState(0);
 
   return (
 
-    <div className='bg-[#F5F5F5]'>
+    <div className='bg-[#F5F5F5] page-slide'>
     <Navbar></Navbar>
     <Counter count = {count}></Counter>
-    <Suspense fallback = 'Wait for data...'>
+    <div className='max-w-[1400px] mx-auto mt-20'>
+      <Suspense fallback = {<div><span className="loading loading-spinner loading-xs"></span>
+<span className="loading loading-spinner loading-sm"></span>
+<span className="loading loading-spinner loading-md"></span>
+<span className="loading loading-spinner loading-lg"></span>
+<span className="loading loading-spinner loading-xl"></span></div>}  >
       <CustomerTickets 
       customerTickets = {customerTickets} 
       count = {count} 
@@ -31,6 +36,7 @@ const [count,setCount] = useState(0);
         
       </CustomerTickets>
     </Suspense>
+    </div>
     <ToastContainer />
     </div>
   )

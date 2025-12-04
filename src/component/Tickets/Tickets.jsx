@@ -2,7 +2,6 @@ import React from 'react';
 import clander from '../../assets/ri_calendar-line.png'
 import { toast } from 'react-toastify';
 const Tickets = ({ticket, count, setCount, addTask, setAddTask}) => {
-
     // cart btn functionality
 let cartBtnText = {};   
 let cartBtnBgColor = {};
@@ -36,24 +35,21 @@ if(dupticateCardCheck.length === 0) {
      setCount(count+1)
 }
 else{
-    toast('Your Problem added before')
+    toast('Your Complaint is being Processed')
 }
  }
 
     return (
     
-        
             <div onClick={() => {cartFunctionally()}}  className='bg-white p-4 shadow'>
                 <div className='flex justify-between items-center mb-2'>
                     <h3 className='font-medium text-[18px] leading-5.5 text-[#001931]'>{ticket.title}</h3>
                     <div style={cartBtnBgColor}   className='flex items-center gap-1.5 font-medium  py-1  rounded-2xl  px-3 '>
                     <span style={cartBtnDot}  className=' rounded-full w-4 h-4'></span>
-                    <span style={cartBtnText}>{ticket.status}</span>
-                        
+                    <span style={cartBtnText}>{ticket.status}</span>     
                     </div>
                 </div>
-                <p className='text-[#627382]'>{ticket.description}</p>
-                
+                <p className='text-[#627382] h-10'>{ticket.description}</p>
                 <div className="flex justify-between items-center mt-4">
                     <div className='font-medium text-[14px] flex items-center'>
                     <p className='text-[#627382] mr-4'>{ticket.id}</p>
@@ -65,9 +61,7 @@ else{
                     <p className='text-[#627382] ml-2'>{ticket.createdAt}</p>
                 </div>
                 </div>
-
-            </div>
-       
+            </div> 
     );
 };
 

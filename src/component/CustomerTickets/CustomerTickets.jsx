@@ -23,14 +23,9 @@ const CustomerTickets = ({customerTickets, count, setCount, }) => {
             }
 </div>
             </div>
-            {/* task card */}
            <div className='col-span-2'>
-           <h2 className='font-semibold text-2xl text-[#34485A] mb-4'>Task Status</h2>
-           {
-            addTask.map(task => <Task key={task.id} task={task} />)
-
-           }
-
+           <h2 className='font-semibold text-2xl text-[#34485A] mb-1'>Task Status</h2>
+            <Task addTask = {addTask}></Task>
            </div>
            
             

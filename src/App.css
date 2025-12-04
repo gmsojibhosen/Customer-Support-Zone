@@ -5,8 +5,10 @@
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-
+  background-color: #F5F5F5;
   font-style: normal;
 }
 
- 
+ html, body {
+  overflow-y: scroll;
+}
