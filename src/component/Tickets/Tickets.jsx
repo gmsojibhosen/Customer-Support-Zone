@@ -1,6 +1,7 @@
 import React from 'react';
 import clander from '../../assets/ri_calendar-line.png'
-const Tickets = ({ticket}) => {
+import { toast } from 'react-toastify';
+const Tickets = ({ticket, count, setCount, addTask, setAddTask}) => {
 
     // cart btn functionality
 let cartBtnText = {};   
@@ -26,10 +27,23 @@ else if(ticket.priority === 'MEDIUM PRIORITY') {
 else if(ticket.priority === 'HIGH PRIORITY') {
     cartPriorityText = {color: '#F83044'} 
 }
+
+ const cartFunctionally = () => {
+ 
+const dupticateCardCheck =   addTask.filter(t => t.id === ticket.id)
+if(dupticateCardCheck.length === 0) {
+    setAddTask([...addTask, ticket])
+     setCount(count+1)
+}
+else{
+    toast('Your Problem added before')
+}
+ }
+
     return (
-       
+    
         
-            <div className='bg-white p-4 shadow'>
+            <div onClick={() => {cartFunctionally()}}  className='bg-white p-4 shadow'>
                 <div className='flex justify-between items-center mb-2'>
                     <h3 className='font-medium text-[18px] leading-5.5 text-[#001931]'>{ticket.title}</h3>
                     <div style={cartBtnBgColor}   className='flex items-center gap-1.5 font-medium  py-1  rounded-2xl  px-3 '>

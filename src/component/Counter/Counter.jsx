@@ -2,7 +2,7 @@ import React from 'react';
 import bgVictor from '../../assets/vector1.png';
 
 
-const Counter = () => {
+const Counter = ({count,}) => {
   return (
    <div className='max-w-[1400px] mx-auto mt-20 flex gap-6'>
     {/* main content */}
@@ -18,7 +18,8 @@ const Counter = () => {
 }}></div>
     <div className=" text-white text-center w-full h-full">
       <p className='text-2xl leading-6.5 mb-4'>In-Progress</p>
-      <h1 className='text-6xl font-semibold'>{0}</h1>
+      <h1 className='text-6xl font-semibold'>{count++}</h1>
+     
     </div>
 </div>
 
