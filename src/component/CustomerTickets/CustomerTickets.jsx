@@ -2,7 +2,7 @@ import React, {use, useState } from 'react';
 import Tickets from '../Tickets/Tickets';
 import Task from '../Task/Task';
 
-const CustomerTickets = ({customerTickets, count, setCount, }) => {
+const CustomerTickets = ({customerTickets, count, setCount,resolved, setResolved}) => {
     const tickets= use(customerTickets)
     const [addTask, setAddTask] = useState([])
     
@@ -25,7 +25,7 @@ const CustomerTickets = ({customerTickets, count, setCount, }) => {
             </div>
            <div className='col-span-2'>
            <h2 className='font-semibold text-2xl text-[#34485A] mb-1'>Task Status</h2>
-            <Task addTask = {addTask}></Task>
+            <Task addTask = {addTask} resolved = {resolved} setResolved = {setResolved}></Task>
            </div>
            
             

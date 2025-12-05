@@ -16,13 +16,14 @@ function App() {
 
 // add counter
 const [count,setCount] = useState(0);
-
+// add Resolved 
+const [resolved, setResolved] = useState([])
 
   return (
 
     <div className='bg-[#F5F5F5] page-slide'>
     <Navbar></Navbar>
-    <Counter count = {count}></Counter>
+    <Counter count = {count} resolved = {resolved}></Counter>
     <div className='max-w-[1400px] mx-auto mt-20'>
       <Suspense fallback = {<div><span className="loading loading-spinner loading-xs"></span>
 <span className="loading loading-spinner loading-sm"></span>
@@ -32,8 +33,10 @@ const [count,setCount] = useState(0);
       <CustomerTickets 
       customerTickets = {customerTickets} 
       count = {count} 
-      setCount = {setCount}>
-        
+      setCount = {setCount}
+      resolved = {resolved}
+      setResolved = {setResolved}>
+         
       </CustomerTickets>
     </Suspense>
     </div>
