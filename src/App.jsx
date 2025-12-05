@@ -4,6 +4,7 @@ import Counter from './component/Counter/Counter'
 import CustomerTickets from './component/CustomerTickets/CustomerTickets'
 import Navbar from './component/Navbar/Navbar'
  import { ToastContainer,} from 'react-toastify';
+import Footer from './component/Footer/Footer'
 
 
 
@@ -71,6 +72,7 @@ setCount(count => count - 1);
     </Suspense>
     </div>
     <ToastContainer />
+    <Footer></Footer>
     </div>
   )
 }
