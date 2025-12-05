@@ -18,7 +18,7 @@ const Counter = ({count,resolved}) => {
 }}></div>
     <div className=" text-white text-center w-full h-full">
       <p className='text-2xl leading-6.5 mb-4'>In-Progress</p>
-      <h1 className='text-6xl font-semibold'>{count++}</h1>
+      <h1 className='text-6xl font-semibold'>{count}</h1>
      
     </div>
 </div>

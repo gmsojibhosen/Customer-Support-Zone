@@ -1,24 +1,49 @@
-import { Suspense, useState } from 'react'
+import { Suspense, useState, useEffect } from 'react'
 import './App.css'
 import Counter from './component/Counter/Counter'
 import CustomerTickets from './component/CustomerTickets/CustomerTickets'
 import Navbar from './component/Navbar/Navbar'
  import { ToastContainer,} from 'react-toastify';
-const fetchTickets = async () => {
 
-  const res = await fetch('/customerTicket.json')
-  const data = await res.json()
-  return data;
-}
-const customerTickets = fetchTickets()
+
+
 
 function App() {
+ const [customerTickets, setCustomerTickets] = useState([]);
+useEffect(() => {
+  const loadTickets = async () => {
+    try {
+      const res = await fetch('/customerTicket.json');
+      const data = await res.json();
+      setCustomerTickets(data);
+    } catch (error) {
+      console.error("data is fail", error);
+    }
+  };
+  loadTickets();
+}, []);
 
+
+const [addTask, setAddTask] = useState([])
 // add counter
 const [count,setCount] = useState(0);
 // add Resolved 
-const [resolved, setResolved] = useState([])
+const [resolved, setResolved] = useState([]);
+// remove cart 
 
+const removeCustomerTicket = (removeTicket) => {
+  console.log(removeTicket)
+  const filterRemove = customerTickets.filter(t => t.id !== removeTicket.id);
+  setCustomerTickets(filterRemove);
+};
+
+
+const removeCart = (cart) => {
+const filterRemoveCart = addTask.filter(task => task.id !== cart.id)
+setAddTask(filterRemoveCart)
+setCount(count => count - 1);
+
+}
   return (
 
     <div className='bg-[#F5F5F5] page-slide'>
@@ -31,11 +56,16 @@ const [resolved, setResolved] = useState([])
 <span className="loading loading-spinner loading-lg"></span>
 <span className="loading loading-spinner loading-xl"></span></div>}  >
       <CustomerTickets 
-      customerTickets = {customerTickets} 
+      customerTickets = {customerTickets}
+      addTask = {addTask}
+      setAddTask = {setAddTask} 
       count = {count} 
       setCount = {setCount}
       resolved = {resolved}
-      setResolved = {setResolved}>
+      setResolved = {setResolved}
+      removeCart={removeCart}
+      removeCustomerTicket={removeCustomerTicket}
+      >
          
       </CustomerTickets>
     </Suspense>

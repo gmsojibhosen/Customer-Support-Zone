@@ -1,10 +1,9 @@
-import React, {use, useState } from 'react';
 import Tickets from '../Tickets/Tickets';
 import Task from '../Task/Task';
 
-const CustomerTickets = ({customerTickets, count, setCount,resolved, setResolved}) => {
-    const tickets= use(customerTickets)
-    const [addTask, setAddTask] = useState([])
+const CustomerTickets = ({customerTickets, addTask, setAddTask, count, setCount,resolved, setResolved, removeCart, removeCarts, removeCustomerTicket}) => {
+      const tickets = customerTickets;
+    
     
     return (
         <div className='max-w-[1400px] mx-auto mt-20 grid grid-cols-8 gap-8'>
@@ -14,18 +13,23 @@ const CustomerTickets = ({customerTickets, count, setCount,resolved, setResolved
 
            <div className="grid grid-cols-2 gap-6">
             {
-            tickets.map(ticket => <div key={ticket.id}><Tickets 
+            tickets.map(ticket =>  <Tickets
+                key = {ticket.id} 
                 ticket={ticket}
                 count = {count} 
                 setCount = {setCount}
                 addTask = {addTask}
-                setAddTask = {setAddTask}> </Tickets></div>)
+                setAddTask = {setAddTask}
+                removeCarts = {removeCarts}
+                 > 
+                </Tickets>)
             }
 </div>
             </div>
            <div className='col-span-2'>
            <h2 className='font-semibold text-2xl text-[#34485A] mb-1'>Task Status</h2>
-            <Task addTask = {addTask} resolved = {resolved} setResolved = {setResolved}></Task>
+            <Task addTask = {addTask} resolved = {resolved} setResolved = {setResolved} removeCart = {removeCart} removeCarts = {removeCarts}
+            removeCustomerTicket = {removeCustomerTicket}></Task>
            </div>
            
             

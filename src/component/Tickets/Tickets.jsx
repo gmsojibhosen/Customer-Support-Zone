@@ -1,7 +1,8 @@
 import React from 'react';
 import clander from '../../assets/ri_calendar-line.png'
 import { toast } from 'react-toastify';
-const Tickets = ({ticket, count, setCount, addTask, setAddTask}) => {
+const Tickets = ({ticket, count, setCount, addTask, setAddTask,}) => {
+
     // cart btn functionality
 let cartBtnText = {};   
 let cartBtnBgColor = {};
@@ -28,14 +29,13 @@ else if(ticket.priority === 'HIGH PRIORITY') {
 }
 
  const cartFunctionally = () => {
- 
 const dupticateCardCheck =   addTask.filter(t => t.id === ticket.id)
 if(dupticateCardCheck.length === 0) {
     setAddTask([...addTask, ticket])
      setCount(count+1)
-}
+     toast(<p className='font-semibold '>In-Progress</p>)}
 else{
-    toast('Your Complaint is being Processed')
+    toast(<p className='font-semibold '>Before add In-Progress</p>)
 }
  }
 
