@@ -4,9 +4,9 @@ import bgVictor from '../../assets/vector1.png';
 
 const Counter = ({count,resolved}) => {
   return (
-   <div className='max-w-[1400px] mx-auto mt-20 flex gap-6'>
+   <div className='sm:max-w-[1400px] mx-auto sm:mt-20 sm:flex gap-6 p-3 md:p-0'>
     {/* main content */}
-    <div className="w-1/2 bg-linear-to-r from-[#632EE3] to-[#9F62F2]  relative z-0 p-17 rounded-lg">
+    <div className="w-full sm:w-1/2 bg-linear-to-r from-[#632EE3] to-[#9F62F2]  relative z-0 p-17 rounded-lg mb-3 md:mb-0">
     {/* img left */}
     <div className='absolute h-full w-1/2 z-10  top-0 left-0 bg-no-repeat'
     style={{backgroundImage: `url(${bgVictor})`,transform: 'scaleX(1)'
@@ -25,7 +25,7 @@ const Counter = ({count,resolved}) => {
 
 
   {/* main content */}
-    <div className="w-1/2 bg-linear-to-r from-[#54CF68] to-[#00827A]  relative z-0 p-17 rounded-lg">
+    <div className="w-full sm:w-1/2 bg-linear-to-r from-[#54CF68] to-[#00827A]  relative z-0 p-17 rounded-lg">
     {/* img left */}
     <div className='absolute h-full w-1/2 z-10  top-0 left-0 bg-no-repeat'
     style={{backgroundImage: `url(${bgVictor})`,transform: 'scaleX(1)'

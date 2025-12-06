@@ -26,11 +26,10 @@ useEffect(() => {
 
 
 const [addTask, setAddTask] = useState([])
-// add counter
+
 const [count,setCount] = useState(0);
-// add Resolved 
+
 const [resolved, setResolved] = useState([]);
-// remove cart 
 
 const removeCustomerTicket = (removeTicket) => {
   console.log(removeTicket)
@@ -50,7 +49,7 @@ setCount(count => count - 1);
     <div className='bg-[#F5F5F5] page-slide'>
     <Navbar></Navbar>
     <Counter count = {count} resolved = {resolved}></Counter>
-    <div className='max-w-[1400px] mx-auto mt-20'>
+    <div className='max-w-[1400px] mx-auto mt-5 sm:mt-20'>
       <Suspense fallback = {<div><span className="loading loading-spinner loading-xs"></span>
 <span className="loading loading-spinner loading-sm"></span>
 <span className="loading loading-spinner loading-md"></span>
@@ -71,8 +70,9 @@ setCount(count => count - 1);
       </CustomerTickets>
     </Suspense>
     </div>
-    <ToastContainer />
+    
     <Footer></Footer>
+    <ToastContainer />
     </div>
   )
 }

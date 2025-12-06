@@ -41,17 +41,17 @@ else{
 
     return (
     
-            <div onClick={() => {cartFunctionally()}}  className='bg-white p-4 shadow'>
+            <div onClick={() => {cartFunctionally()}}  className='mb-3 sm:mb-0 bg-white p-4 shadow'>
                 <div className='flex justify-between items-center mb-2'>
-                    <h3 className='font-medium text-[18px] leading-5.5 text-[#001931]'>{ticket.title}</h3>
+                    <h3 className='font-medium text-[15px] sm:text-[18px] leading-5.5 text-[#001931]'>{ticket.title}</h3>
                     <div style={cartBtnBgColor}   className='flex items-center gap-1.5 font-medium  py-1  rounded-2xl  px-3 '>
                     <span style={cartBtnDot}  className=' rounded-full w-4 h-4'></span>
-                    <span style={cartBtnText}>{ticket.status}</span>     
+                    <span className='text-[12px]'  style={cartBtnText}>{ticket.status}</span>     
                     </div>
                 </div>
-                <p className='text-[#627382] h-10'>{ticket.description}</p>
-                <div className="flex justify-between items-center mt-4">
-                    <div className='font-medium text-[14px] flex items-center'>
+                <p className='text-[#627382] h-8 sm:h-10 text-[14px] text-m'>{ticket.description}</p>
+                <div className="block sm:flex justify-between items-center mt-4">
+                    <div className='font-medium text-[14px] flex items-center mb-2'>
                     <p className='text-[#627382] mr-4'>{ticket.id}</p>
                     <p style={cartPriorityText} className='text-[#02A53B]'>{ticket.priority}</p>
                 </div>

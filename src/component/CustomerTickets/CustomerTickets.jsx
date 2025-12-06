@@ -6,12 +6,12 @@ const CustomerTickets = ({customerTickets, addTask, setAddTask, count, setCount,
     
     
     return (
-        <div className='max-w-[1400px] mx-auto mt-20 grid grid-cols-8 gap-8'>
+        <div className='max-w-[1400px] mx-auto mt-5 sm:mt-20 grid sm:grid-cols-8 gap-8 p-3 md:p-0'>
             {/* tickets card */}
-           <div className=' col-span-6'>
+           <div className=' sm:col-span-6'>
            <h2 className='font-semibold text-2xl text-[#34485A] mb-4'>Customer Tickets</h2>
 
-           <div className="grid grid-cols-2 gap-6">
+           <div className="sm:grid grid-cols-2 gap-6">
             {
             tickets.map(ticket =>  <Tickets
                 key = {ticket.id} 
@@ -26,7 +26,7 @@ const CustomerTickets = ({customerTickets, addTask, setAddTask, count, setCount,
             }
 </div>
             </div>
-           <div className='col-span-2'>
+           <div className='sm:col-span-2'>
            <h2 className='font-semibold text-2xl text-[#34485A] mb-1'>Task Status</h2>
             <Task addTask = {addTask} resolved = {resolved} setResolved = {setResolved} removeCart = {removeCart} removeCarts = {removeCarts}
             removeCustomerTicket = {removeCustomerTicket}></Task>

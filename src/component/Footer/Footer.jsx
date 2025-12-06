@@ -5,8 +5,8 @@ import fbIcon from '../../assets/fb (1).png'
 import eIcon from '../../assets/email.png'
 const Footer = () => {
     return (
-        <div className='bg-black mt-20 pt-20 pb-10'>
-            <div  className='max-w-[1400px] mx-auto flex justify-between gap-27 mb-20'>
+        <div className='bg-black mt-5 sm:mt-20 pt-20 pb-10 p-3 md:p-0'>
+            <div  className='sm:max-w-[1400px] mx-auto flex justify-between flex-col gap-5 sm:gap-27 mb-10 sm:mb-20'>
                 <div className='max-w-[350px]'>
                     <h2 className='text-white text-2xl font-bold mb-4'>CS — Ticket System</h2>
                     <p className='text-[#A1A1AA]'>online ticket is a modern and user-friendly customer support management application.

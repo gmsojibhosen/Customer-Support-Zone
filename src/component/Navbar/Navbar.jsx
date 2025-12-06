@@ -2,15 +2,15 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div className='shadow-sm bg-white'>
-            <div  className="navbar border-none   flex justify-between  w-[1400px] mx-auto p-4">
+        <div className='shadow-sm bg-white w-full'>
+            <div  className="navbar border-none   flex justify-between  sm:w-[1400px] mx-auto p-4">
   
  
      <div className="">
     <a className="font-bold text-2xl">CS — Ticket System</a>
   </div>
   
-    <ul className='flex gap-8 items-center'>
+    <ul className='hidden sm:flex gap-8 items-center '>
         <li className='text-[#00000090] '> <a href="">Home</a></li>
         <li className='text-[#00000090] '> <a href="">FAQ</a></li>
         <li className='text-[#00000090] '> <a href="">Changelog</a></li>
