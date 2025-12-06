@@ -1,16 +1,10 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Q: What is JSX, and why is it used?
+A: JSX is an abbreviation for JavaScript XML. It is used to create UI in React, and JSX is used because it is easier to write UI.
+Q: What is the difference between State and Props?
+A: Props are a simple way to send data from a parent component to a child component, and State is the component's local data, which is controlled by the element itself.
+Q: What is the useState hook, and how does it work?
+A: In React, useState is a Hook that is used to create and update state within a component. 
+Q: How can you share state between components in React?
+A: Lifting State Up
+Q How can you share state between components in React?
+A: Respond to events with artificial events, which work the same way in all browsers.
