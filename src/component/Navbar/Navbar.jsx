@@ -7,7 +7,7 @@ const Navbar = () => {
   
  
      <div className="">
-    <a className="font-bold text-2xl">CS — Ticket System</a>
+    <a className="font-bold text-2xl text-black">CS — Ticket System</a>
   </div>
   
     <ul className='hidden sm:flex gap-8 items-center '>
